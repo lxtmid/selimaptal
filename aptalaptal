@@ -14092,6 +14092,9 @@
                             case "carbon":
                                 this.buildCarbonMaterial();
                                 break;
+                            case "selim aptal":
+                                this.buildCarbonMaterial();
+                                break;    
                             default:
                                 this.buildDefaultMaterial()
                         }
@@ -14152,6 +14155,18 @@
                             emissive: O0OOI.hsvToRgbHex(this.hue, .5, 1),
                             emissiveMap: lIO10
                         })
+                    },t.prototype.buildSelimAptalMaterial = function () {
+                        return this.material = new THREE.MeshPhongMaterial({
+                        map: IlIl0,
+                        bumpMap: IlIl0,
+                        bumpScale: 0.12,
+                        specular: 0x88ccff,               // Холодный голубой блик
+                        shininess: 25,                    // Более яркие блики
+                        color: 0x0a1a2f,                  // Глубокий тёмно-синий
+                        emissive: 0x224477,               // Синий светящийся отлив
+                        emissiveIntensity: 0.6,
+                        emissiveMap: lIO10
+                    })
                     }, t.prototype.buildFullColorMaterial = function () {
                         var t;
                         return t = O0OOI.hsvToRgbHex(this.hue, 1, 1), this.material = new THREE
@@ -16976,6 +16991,9 @@
                             case "carbon":
                                 this.buildCarbonMaterial();
                                 break;
+                            case "selimaptal":
+                                this.buildSelimAptalMaterial();
+                                break;    
                             case "copper":
                                 this.buildCopperMaterial();
                                 break;
@@ -17030,6 +17048,18 @@
                             emissive: O0OOI.hsvToRgbHex(this.hue, .5, 1),
                             emissiveMap: lIO10
                         })
+                    }, t.prototype.buildSelimAptalMaterial = function () {
+                        return this.material = new THREE.MeshPhongMaterial({
+                        map: IlIl0,
+                        bumpMap: IlIl0,
+                        bumpScale: 0.12,
+                        specular: 0x88ccff,               // Холодный голубой блик
+                        shininess: 25,                    // Более яркие блики
+                        color: 0x0a1a2f,                  // Глубокий тёмно-синий
+                        emissive: 0x224477,               // Синий светящийся отлив
+                        emissiveIntensity: 0.6,
+                        emissiveMap: lIO10
+                    })
                     }, t.prototype.buildFullColorMaterial = function () {
                         var t;
                         return t = O0OOI.hsvToRgbHex(this.hue, 1, 1), this.material = new THREE
@@ -26860,12 +26890,12 @@
                     }, t.getRandomImage = function (e) {
                         var i, s, l;
                         return i = ["star", "paw", "pirate", "reddit", "invader", "youtube"][Math.floor(6 * Math
-                                .random())], s = ["zinc", "gold", "alloy", "carbon", "titanium"][Math.floor(5 *
+                                .random())], s = ["zinc", "gold", "alloy", "carbon", "titanium", "selimaptal"][Math.floor(5 *
                                 Math.random())], l = ["0", "1", "2", "3"][Math.floor(4 * Math.random())], t
                             .llI10(i, l, s, e)
                     }, t.test = function () {
                         var e, i, s, l, n, a, o, r, h, u, d, c;
-                        for (u = ["zinc", "gold", "alloy", "carbon", "titanium"], s = 0, a = u.length; s <
+                        for (u = ["zinc", "gold", "alloy", "carbon", "titanium", "selimaptal"], s = 0, a = u.length; s <
                             a; s++)
                             for (e = u[s], d = ["star", "paw", "pirate", "reddit", "invader", "youtube"], l = 0,
                                 o = d.length; l < o; l++)
@@ -26994,7 +27024,7 @@
                             gold: "Gold",
                             titanium: "Titanium",
                             carbon: "Carbon",
-                            selim: "SelimAptal"
+                            selimaptal: "SelimAptal"
                         },
                         laser: {
                             0: "Single",
