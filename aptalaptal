@@ -26993,8 +26993,8 @@
                             alloy: "Alloy",
                             gold: "Gold",
                             titanium: "Titanium",
-                            carbon: "Carbon"
-                            selim aptal: "selim aptal"
+                            carbon: "Carbon",
+                            selim: "SelimAptal"
                         },
                         laser: {
                             0: "Single",
